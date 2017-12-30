@@ -33,8 +33,6 @@
     constructor(el, options) {
       super(Chips, el, options);
 
-      this.el = el;
-      this.$el = $(el);
       this.el.M_Chips = this;
 
       /**
@@ -392,9 +390,9 @@
         }
         return !exists;
 
-      } else {
-        return false;
       }
+
+      return false;
     }
 
     /**
