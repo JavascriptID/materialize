@@ -1,5 +1,10 @@
+## Auto Init
+- Componenets are no longer initialized automatically on document load by Materialize
+- Added function `M.AutoInit()` that initializes all componenets
+
 ## Autocomplete
 - Added sort function to order completion results
+- Autocomplete now uses dropdown to show options
 
 ## Carousel
 - Added numVisible option
@@ -25,7 +30,7 @@
 
 
 ## Datepicker
-
+- Complete rewrite of Datepicker, please see new documentation
 
 
 ## Dropdown
@@ -42,6 +47,8 @@
 - Added onOpenEnd callback
 - Added onCloseStart callback
 - Added onCloseEnd callback
+- Added autoFocus option
+- Added `recalculateDimensions` method
 
 
 ## Materialbox
@@ -78,6 +85,10 @@
 ## Scrollspy
 - Added throttle option
 
+## Select
+- Renamed plugin call `.material_select()` to `.formSelect()`
+- Added `dropdownOptions` as a way to customize the dropdown that Select uses
+
 
 ## Sidenav
 - Removed menuWidth option, use CSS to set sidenav width instead
@@ -111,6 +122,14 @@
 - Added onClose callback
 
 
+## Timepicker
+- Renamed `default` option to `defaultTime`
+- Added cancel button to picker
+- Timepicker options `clear`, `close` moved to `i18n.clear`, and `i18n.done` respectively.
+- Renamed `fromnow` option to `fromNow`
+- Removed `ampmclickable` option
+
+
 ## Toasts
 - Arguments list of the M.toast function has been changed into an options Object similar to all the other plugins
 - Rename the `className` option to `classes`
@@ -125,9 +144,6 @@
 - Added transitionMovement option
 - Added keyboard support
 - Some html attribute options have been removed, only data-tooltip and data-position remain, instead use the options during initialization to set options
-
-
-
 
 
 ## Typography
